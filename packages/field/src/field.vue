@@ -120,6 +120,7 @@ export default {
     handleClear() {
       if (this.disabled || this.readonly) return;
       this.currentValue = '';
+      this.$refs.input.focus();
     }
   },
 
